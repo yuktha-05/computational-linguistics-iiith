@@ -1,0 +1,11 @@
+                    FUNCTIONS LIST FOR MY UNDERSTANDING
+1) For dropdown---> drop()
+2) For onclick----> myfunc()
+3) For displaying the buttons --> dispbtn()
+4) To check the answer ---> validation()
+5) For reforming the sentence ---> refo()
+6) For hiding the answers ----> hideans()
+7) For showing all the right answers ----> checkrightans()
+8) For english sentence ---> engsub()
+9) For hindi sentence ---> hinsub()
+10) image src , href , etc., 
