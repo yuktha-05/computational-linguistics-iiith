@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="store4"></p>
+
+<script>
+var text4 = '{"Storesentence4":[' +
+'{"first":"the woman who called my sister sells cosmetics, ","second":"the woman who sells cosmetics called my sister, ","third":"my sister who sells cosmetics called the woman, ","fourth":"my sister who called the woman sells cosmetics"}]}';
+obj = JSON.parse(text4);
+document.getElementById("store4").innerHTML = obj.Storesentence4[0].first + " " + obj.Storesentence4[0].second + " " + obj.Storesentence4[0].third + " " + obj.Storesentence4[0].fourth ; 
+</script>
+</body>
+</html>

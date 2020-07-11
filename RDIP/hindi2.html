@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="store6"></p>
+
+<script>
+var text6 = '{"Storesentence6":[' +
+'{"first":"राम खाकर सोया,","second":"खाकर राम सोया,","third":"राम सोया खाकर,","fourth":"खाकर सोया राम,","fifth":"सोया राम खाकर,","sixth":"सोया खाकर राम"}]}';
+obj = JSON.parse(text6);
+document.getElementById("store6").innerHTML = obj.Storesentence6[0].first + " " + obj.Storesentence6[0].second + " " + obj.Storesentence6[0].third + " " + obj.Storesentence6[0].fourth + " " + obj.Storesentence6[0].fifth + " " + obj.Storesentence6[0].sixth; 
+</script>
+</body>
+</html>

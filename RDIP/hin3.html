@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="store7"></p>
+
+<script>
+var text7 = '{"Storesentence7":[' +
+'{"first":"बिल्लियों को मारकर कुत्ता सो गया,","second":"मारकर बिल्लियों को कुत्ता सो गया,","third":"बिल्लियों को मारकर सो गया कुत्ता,","fourth":" मारकर बिल्लियों को सो गया कुत्ता,","fifth":"कुत्ता सो गया बिल्लियों को मारकर,","sixth":"कुत्ता सो गया मारकर बिल्लियों को,","seventh":"सो गया कुत्ता बिल्लियों को मारकर,","eighth":"सो गया कुत्ता मारकर बिल्लियों को"},' +
+'{"first":"एक बड़ी सी किताब वहाँ है,","second":"एक बड़ी सी किताब है वहाँ,","third":"बड़ी सी एक किताब वहाँ है,","fourth":" बड़ी सी एक किताब है वहाँ,","fifth":"वहाँ है एक बड़ी सी किताब,","sixth":"वहाँ है बड़ी सी एक किताब,","seventh":"है वहाँ एक बड़ी सी किताब,","eighth":"है वहाँ बड़ी सी एक किताब"}]}';
+obj = JSON.parse(text7);
+document.getElementById("store7").innerHTML = obj.Storesentence7[1].first + " " + obj.Storesentence7[1].second + " " + obj.Storesentence7[1].third + " " + obj.Storesentence7[1].fourth + " " + obj.Storesentence7[1].fifth + " " + obj.Storesentence7[1].sixth + " " + obj.Storesentence7[1].seventh + " " + obj.Storesentence7[1].eighth; 
+</script>
+</body>
+</html>

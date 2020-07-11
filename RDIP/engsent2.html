@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="store1"></p>
+<script>
+	var text1 = '{"Storesentence1":[' +
+	'{"first":"some students like to study in the night, ","second":"at night some students like to study"},' +
+    '{"first":"John and Mary went to church, ","second":"Mary and John went to church"},' +
+    '{"first":"did he go to market,	","second":"he did go to market"},' +
+    '{"first":"John goes to the library and studies, ","second":"John studies and goes to the library"},' +
+    '{"first":"John ate an apple so did she, ","second":"she ate an apple so did John"}]}';
+    obj = JSON.parse(text1);
+    document.getElementById("store1").innerHTML = obj.Storesentence1[1].first + " " + obj.Storesentence1[1].second; 
+</script>
+</body>
+</html>

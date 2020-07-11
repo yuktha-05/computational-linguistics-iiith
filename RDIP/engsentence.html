@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="store"></p>
+
+<script>
+var text = '{"Storesentence":[' +
+'{"first":"John ate an apple before afternoon,","second":"before afternoon John ate an apple,","third":"John before afternoon ate an apple,"},' +
+'{"first":"John went to church after eating,","second":"after eating John went to church,","third":"John after eating went to church"}]}';        
+
+
+obj = JSON.parse(text);
+document.getElementById("store").innerHTML = obj.Storesentence[1].first + " " + obj.Storesentence[1].second + " " + obj.Storesentence[1].third; 
+</script>
+</body>
+</html>

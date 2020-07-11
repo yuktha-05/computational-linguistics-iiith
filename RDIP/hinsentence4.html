@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="store8"></p>
+<script>
+	var text8 = '{"Storesentence8":[' +
+	'{"first":"मैंने उसे बताया कि राम सो रहा है,","second":"मैंने उसे बताया कि सो रहा है राम,","third":"उसे मैंने बताया कि राम सो रहा है,","fourth":"उसे मैंने बताया कि सो रहा है राम,","fifth":"मैंने बताया उसे कि राम सो रहा है,","sixth":"मैंने बताया उसे कि सो रहा है राम,","seventh":"उसे बताया मैंने कि राम सो रहा है,","eighth":"उसे बताया मैंने कि सो रहा है राम","ninth":"बताया मैंने उसे कि राम सो रहा है,","tenth":"बताया मैंने उसे कि सो रहा है राम,","eleventh":"बताया उसे मैंने कि राम सो रहा है,","twelfth":"बताया उसे मैंने कि सो रहा है राम"}]}';
+
+    obj = JSON.parse(text8);
+    document.getElementById("store8").innerHTML = obj.Storesentence8[0].first + " " + obj.Storesentence8[0].second + " " + obj.Storesentence8[0].third + " " + obj.Storesentence8[0].fourth + " " + obj.Storesentence8[0].fifth + " " + obj.Storesentence8[0].sixth + " " + obj.Storesentence8[0].seventh + " " + obj.Storesentence8[0].eighth  + " " + obj.Storesentence8[0].ninth  + " " + obj.Storesentence8[0].tenth  + " " + obj.Storesentence8[0].eleventh  + " " + obj.Storesentence8[0].twelfth;
+</script>
+</body>
+</html>

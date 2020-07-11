@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="store5"></p>
+
+<script>
+var text5 = '{"Storesentence5":[' +
+'{"first":"राम और श्याम बाजार गयें,","second":"राम और श्याम गयें बाजार,","third":"बाजार गयें राम और श्याम,","fourth":"गयें बाजार राम और श्याम"},' +
+'{"first":"राम सोया और श्याम भी,","second":"श्याम सोया और राम भी,","third":"सोया श्याम और राम भी,","fourth":"सोया राम और श्याम भी"},' +
+'{"first":"एक लाल किताब वहाँ है, ","second":"एक लाल किताब है वहाँ, ","third":"वहाँ है एक लाल किताब, ","fourth":"है वहाँ एक लाल किताब"}]}';
+obj = JSON.parse(text5);
+document.getElementById("store5").innerHTML = obj.Storesentence5[0].first + " " + obj.Storesentence5[0].second + " " + obj.Storesentence5[0].third + " " + obj.Storesentence5[0].fourth ; 
+</script>
+</body>
+</html>
