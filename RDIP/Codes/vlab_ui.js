@@ -1,21 +1,3 @@
-/*function mydropdown($this)
-{
-    if($this.value=="Select Language")
-    {
-        alert("Select Language");
-
-    }
-
-}
-
-
-$(document).ready(function() {
-    $('select[name="configoption[5]"]').change(function() {
-        var value = $(this).val();
-        $('.message').toggle(value == 'english' || value == 'hindi');
-    });
-});*/
-
 var sent1 = '{"eng":[' +
     '{"a":"John ate an apple before afternoon","b":"before afternoon John ate an apple","c":"John before afternoon ate an apple"},' +
     '{"a":"John went to church after eating","b":"after eating John went to church","c":"John after eating went to church"},' +
@@ -108,3 +90,20 @@ var sent2 = '{"hin":[' +
        alert("Select languague");
     }
 }
+/*function mydropdown($this)
+{
+    if($this.value=="Select Language")
+    {
+        alert("Select Language");
+
+    }
+
+}
+
+
+$(document).ready(function() {
+    $('select[name="configoption[5]"]').change(function() {
+        var value = $(this).val();
+        $('.message').toggle(value == 'english' || value == 'hindi');
+    });
+});*/
