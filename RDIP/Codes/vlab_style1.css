@@ -1,3 +1,4 @@
+
 .drop select {
     background: transparent;
     margin-left: 550px;
@@ -20,13 +21,13 @@
 
 p1 {
     color: darkblue;
-    font-size: 31px;
+    font-size: 30px;
     text-align:center;
 }
 
 p2 {
     color: blue;
-    font-size: 19px;
+    font-size: 18px;
     font-style: inherit;
 }
 
