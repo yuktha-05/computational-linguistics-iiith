@@ -1,0 +1,40 @@
+.drop select {
+    background: transparent;
+    margin-left: 550px;
+    margin-top: 150px;
+
+}
+
+.drop::after{
+    display: inline-block;
+    border-top: 10px solid #777;
+    border-right:10px solid transparent;
+    border-left:10px solid transparent;
+    position: absolute;
+    top:calc(50% - 5px);
+    right:.5rem;
+    z-index: -1;
+    pointer-events: none;
+    
+}
+
+p1 {
+    color: darkblue;
+    font-size: 30px;
+    text-align:center;
+}
+
+p2 {
+    color: blue;
+    font-size: 17px;
+    font-style: inherit;
+}
+
+td
+{
+    font-size: 30px;
+    text-align:center;
+}
+button {
+    padding: 8px 30px 8px 30px;
+}
