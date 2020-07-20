@@ -122,3 +122,18 @@ function correctsent(l) {
     document.getElementById("sentence2").innerHTML = " (after selecting the words): ";
     document.getElementById("senref").innerHTML = "<button>" + "Re-form the sentence" + "</button>";
 }       
+function run() {
+    count = 0;
+    document.getElementById("sen1").innerHTML = " ";
+    document.getElementById("sen2").value = " ";
+    document.getElementById("sentence").innerHTML =" ";
+    document.getElementById("sentence2").innerHTML =" ";
+    document.getElementById("senref").innerHTML =" ";
+   
+    for (var i = 0; i < 10; i++) {
+        var a = document.getElementById(i).value
+        if (a != " ") {
+            document.getElementById(i).innerHTML = "<button>" + a + "</button>";
+        }
+    }
+}
