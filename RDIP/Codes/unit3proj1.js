@@ -39,8 +39,11 @@ var sent2 = '{"hin":[' +
 
     function rand()
 {
+    document.getElementById("sen1").innerHTML = "";                                                         
+    document.getElementById("sen1").value = "";
     document.getElementById("sentence").innerHTML = "";
-    document.getElementById("sentence2").innerHTML = "";                                               
+    document.getElementById("sentence2").innerHTML = "";
+    document.getElementById("senref").innerHTML = "";                                                 
 
     for (var l = 0; l < 10; l++) {
         document.getElementById(l).value = " ";                                                         
@@ -108,3 +111,14 @@ var sent2 = '{"hin":[' +
        alert("Select languague");
     }
 }
+
+var count = 0;
+function correctsent(l) {
+    var eg = document.getElementById(l).value;
+    document.getElementById("sen2").value += eg+" ";
+    document.getElementById("sen1").innerHTML += eg + "&nbsp" + "&nbsp" + "&nbsp" + "&nbsp";
+    document.getElementById(l).innerHTML = " ";
+    document.getElementById("sentence").innerHTML = "Formed Sentence";
+    document.getElementById("sentence2").innerHTML = " (after selecting the words): ";
+    document.getElementById("senref").innerHTML = "<button>" + "Re-form the sentence" + "</button>";
+}       
