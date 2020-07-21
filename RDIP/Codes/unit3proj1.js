@@ -43,7 +43,8 @@ var sent2 = '{"hin":[' +
     document.getElementById("sen1").value = "";
     document.getElementById("sentence").innerHTML = "";
     document.getElementById("sentence2").innerHTML = "";
-    document.getElementById("senref").innerHTML = "";                                                 
+    document.getElementById("senref").innerHTML = "";
+     document.getElementById("sencheck").innerHTML = "";                                                  
 
     for (var l = 0; l < 10; l++) {
         document.getElementById(l).value = " ";                                                         
@@ -121,6 +122,11 @@ function correctsent(l) {
     document.getElementById("sentence").innerHTML = "Formed Sentence";
     document.getElementById("sentence2").innerHTML = " (after selecting the words): ";
     document.getElementById("senref").innerHTML = "<button>" + "Re-form the sentence" + "</button>";
+    count++;
+    var width = document.getElementById("sentence").value;
+   if (count === width) {
+        document.getElementById("sencheck").innerHTML = "<button>" + "Check the correctness of this sentence" + "</button>";
+    }
 }       
 function run() {
     count = 0;
@@ -129,6 +135,7 @@ function run() {
     document.getElementById("sentence").innerHTML =" ";
     document.getElementById("sentence2").innerHTML =" ";
     document.getElementById("senref").innerHTML =" ";
+     document.getElementById("sencheck").innerHTML = ""; 
    
     for (var i = 0; i < 10; i++) {
         var a = document.getElementById(i).value
