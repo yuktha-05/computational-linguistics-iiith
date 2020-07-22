@@ -157,7 +157,7 @@ function sencheck_correct() {
             document.getElementById("corpus_1").innerHTML = "Right answer!!!";
         else {
             document.getElementById("corpus_2").innerHTML = "Wrong answer!!!";
-            
+            document.getElementById("wrong").innerHTML = "<button>" + "Get Correct Sentence " + "</button>";
         }
     }
     else {
@@ -171,7 +171,7 @@ function sencheck_correct() {
         else
         {
             document.getElementById("corpus_2").innerHTML = "Wrong answer!!!";
-           
+            document.getElementById("wrong").innerHTML = "<button>" + "Get Correct Sentence " + "</button>";
         }
     }
 
