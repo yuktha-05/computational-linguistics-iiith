@@ -54,6 +54,14 @@ p3
     text-align: center;
 }
 
-#wrong{
-    margin-left: 580px
+
+
+#no_disp,p
+{
+     text-align : center;
+}
+#solution
+{
+    text-align : center;
+    font-size : 15px;
 }

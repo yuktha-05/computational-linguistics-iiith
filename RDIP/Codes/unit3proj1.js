@@ -37,6 +37,8 @@ var sent2 = '{"condition2":[' + '{"a":"राम और श्याम बा�
 
 function rand()
 {
+    document.getElementById("wrong").innerHTML = " ";
+    document.getElementById("solution").innerHTML = " ";
     document.getElementById("sen1").innerHTML = "";                                                        
     document.getElementById("sen1").value = ""; 
     document.getElementById("corpus_1").innerHTML = "";
@@ -44,7 +46,8 @@ function rand()
     document.getElementById("sencheck").innerHTML = "";                                                     
     document.getElementById("senref").innerHTML = "";                                                   
     document.getElementById("sentence").innerHTML = "";                                                
-    document.getElementById("sentence2").innerHTML = "";                                                    
+    document.getElementById("sentence2").innerHTML = ""; 
+    document.getElementById("no_disp").innerHTML = "";                                                   
    
     for (var m = 0; m < 10; m++) {
         document.getElementById(m).value = " ";                                                        
@@ -131,7 +134,8 @@ function correctsent(m) {
 }           
 function run() {
     count = 0;
-    
+    document.getElementById("solution").innerHTML = " ";
+    document.getElementById("wrong").innerHTML = "";
     document.getElementById("sen1").innerHTML = " ";
     document.getElementById("sen2").value = " ";
     document.getElementById("corpus_1").innerHTML ="";
@@ -140,6 +144,7 @@ function run() {
     document.getElementById("sentence2").innerHTML =" ";
     document.getElementById("senref").innerHTML =" ";
     document.getElementById("sencheck").innerHTML = " ";
+    document.getElementById("no_disp").innerHTML = "";
    
     for (var i = 0; i < 10; i++) {
         var a = document.getElementById(i).value
@@ -174,6 +179,51 @@ function sencheck_correct() {
             document.getElementById("wrong").innerHTML = "<button>" + "Get Correct Sentence " + "</button>";
         }
     }
-
 }
 
+function answer() {
+
+    if (document.getElementById("language").value == "english") {
+        var n = document.getElementById("rando").value;
+        document.getElementById("wrong").innerHTML = " ";
+        document.getElementById("no_disp").innerHTML = "<button>" + "Hide the correct sentence " + "</button>";
+        
+        
+        switch (n) {
+            case 0: document.getElementById("solution").innerHTML = obj.condition1[0].a + "<br>" + obj.condition1[0].b + "<br>" + obj.condition1[0].c; break;
+            case 1: document.getElementById("solution").innerHTML = obj.condition1[1].a + "<br>" + obj.condition1[1].b; break;
+            case 2: document.getElementById("solution").innerHTML = obj.condition1[2].a + "<br>" + obj.condition1[0].b + "<br>" + obj.condition1[0].c; break;
+            case 3: document.getElementById("solution").innerHTML = obj.condition1[3].a + "<br>" + obj.condition1[3].b; break;
+            case 4: document.getElementById("solution").innerHTML = obj.condition1[4].a + "<br>" + obj.condition1[4].b; break;
+            case 5: document.getElementById("solution").innerHTML = obj.condition1[5].a + "<br>" + obj.condition1[5].b + "<br>" + obj.condition1[5].c + "<br>" + obj.condition1[5].d; break;
+            case 6: document.getElementById("solution").innerHTML = obj.condition1[6].a + "<br>" + obj.condition1[6].b; break;
+            case 7: document.getElementById("solution").innerHTML = obj.condition1[7].a + "<br>" + obj.condition1[7].b; break;
+            case 8: document.getElementById("solution").innerHTML = obj.condition1[8].a + "<br>" + obj.condition1[8].b + "<br>" + obj.condition1[8].c + "<br>" + obj.condition1[8].d + "<br>" + obj.condition1[8].e + "<br>" + obj.condition1[8].f + "<br>" + obj.condition1[8].g + "<br>" + obj.condition1[8].h; break;
+            case 9: document.getElementById("solution").innerHTML = obj.condition1[9].a + "<br>" + obj.condition1[9].b + "<br>" + obj.condition1[9].c + "<br>" + obj.condition1[9].d + "<br>" + obj.condition1[9].e + "<br>" + obj.condition1[9].f; break;
+
+        }
+    }
+    else {
+        var n = document.getElementById("rando").value;
+        document.getElementById("wrong").innerHTML = " ";
+        document.getElementById("no_disp").innerHTML = "<button>" + "Hide the correct sentence " + "</button>";
+
+        switch (n) {
+            case 0: document.getElementById("solution").innerHTML = obj.condition2[0].a + "<br>" + obj.condition2[0].b + "<br>" + obj.condition2[0].c + "<br>" + obj.condition2[0].d; break;
+            case 1: document.getElementById("solution").innerHTML = obj.condition2[1].a + "<br>" + obj.condition2[1].b + "<br>" + obj.condition2[1].c + "<br>" + obj.condition2[1].d; break;
+            case 2: document.getElementById("solution").innerHTML = obj.condition2[2].a + "<br>" + obj.condition2[2].b + "<br>" + obj.condition2[2].c + "<br>" + obj.condition2[2].d + "<br>" + obj.condition2[2].e + "<br>" + obj.condition2[2].f + "<br>" + obj.condition2[2].g + "<br>" + obj.condition2[2].h + "<br>" + obj.condition2[2].i + "<br>" + obj.condition2[2].j + "<br>" + obj.condition2[2].k + "<br>" + obj.condition2[2].l; break;
+            case 3: document.getElementById("solution").innerHTML = obj.condition2[3].a + "<br>" + obj.condition2[3].b + "<br>" + obj.condition2[3].c + "<br>" + obj.condition2[3].d + "<br>" + obj.condition2[3].e + "<br>" + obj.condition2[3].f; break;
+            case 4: document.getElementById("solution").innerHTML = obj.condition2[4].a + "<br>" + obj.condition2[4].b + "<br>" + obj.condition2[4].c + "<br>" + obj.condition2[4].d + "<br>" + obj.condition2[4].e + "<br>" + obj.condition2[4].f + "<br>" + obj.condition2[4].g + "<br>" + obj.condition2[4].h; break;
+            case 5: document.getElementById("solution").innerHTML = obj.condition2[5].a + "<br>" + obj.condition2[5].b + "<br>" + obj.condition2[5].c + "<br>" + obj.condition1[5].d; break;
+            case 6: document.getElementById("solution").innerHTML = obj.condition2[6].a + "<br>" + obj.condition2[6].b + "<br>" + obj.condition2[6].c + "<br>" + obj.condition2[6].d + "<br>" + obj.condition2[6].e + "<br>" + obj.condition2[6].f + "<br>" + obj.condition2[6].g + "<br>" + obj.condition2[6].h; break;
+                 
+        }
+    }  
+}
+function no_ans()
+{
+   
+    document.getElementById("wrong").innerHTML = "<button>" + "Get Answers " + "</button>";
+    document.getElementById("solution").innerHTML = " ";
+    document.getElementById("no_disp").innerHTML = " ";
+}
