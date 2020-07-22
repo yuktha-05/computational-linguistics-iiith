@@ -17,6 +17,10 @@
     pointer-events: none;
     
 }
+h2{
+    font-family: initial;
+    color: #C71585;
+}
 p1 {
     color: darkblue;
     font-size: 26px;
@@ -39,7 +43,7 @@ td
 }
 p3
 {
-    font-size : 23px;
+    font-size : 25px;
 
 }
 #corpus_1 {
@@ -63,5 +67,5 @@ p3
 #solution
 {
     text-align : center;
-    font-size : 15px;
+    font-size : 18px;
 }
