@@ -14,7 +14,7 @@ $(document).ready(function() {
         var value = $(this).val();
         $('.message').toggle(value == 'english' || value == 'hindi');
     });
-});*/
+})*/
 var sent1 = '{"condition1":[' +
     '{"a":"John ate an apple before afternoon","b":"before afternoon John ate an apple","c":"John before afternoon ate an apple"},' +
     '{"a":"John and Mary went to church","b":"Mary and John went to church"},' +
