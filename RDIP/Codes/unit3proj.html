@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-	<title>Experiment</title>
-	<link href="unit3proj.css" rel="stylesheet">
-	<script src="unit3proj1.js" defer></script>
-	
-
+<meta http-eqiv="Content-Type" content="text/html; charset = utf-8" />
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="unit3proj.css">
+    <script src="unit3proj1.js"></script>
 </head>
 <body>
-	<h2>Experiment</h2>
-<div class="drop">
-  <select  name="formingsentence" id="lang" onchange="rand()">
-    <option value="Select Language">---Select Language---</option>
-    <option value="english" id="down">English</option>
-    <option value="hindi" id="down">Hindi</option>
-    </select>
-   
-</div>
-</center><br><br><br>
+
+    <h2>Experiment</h2><br><br>
+    <center>
+        <select name="formingsentence" id="language" onchange="rand()">
+            <option>---Select Languague---</option>
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+        </select>
+    </center><br><br><br>
     <center><b><p1 id="disp1"></p1></b></center><br>
     <center><b><p2 id="disp2"></p2></b></center><br><br>
     <center>
@@ -46,10 +42,12 @@
     <center><b><p1 id="sentence"></p1></b><p2 id="sentence2"></p2></center><br><br><br>
     <center><b><p3 id="sen1"></p3></b></center><br /><br />
     <center><p id="senref" onclick="run()"></p></center><br>
-    <center><p4 id="sencheck"></p4></center>
-    <p id="rando"></p>
+    <center><p4 id="sencheck" onclick="sencheck_correct()"></p4></center>
+    <p id="corpus_1"></p>
+    <p id="corpus_2"></p>
     <p id="sen2"></p>
-    
+    <p id="rando"></p>
+
 </body>
 </html>
 
